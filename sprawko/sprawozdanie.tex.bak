@@ -1,0 +1,75 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{polski}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\urlstyle{same}
+
+\lstset{
+ columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{{$\hookrightarrow$}\space},
+  literate=%
+{ą}{{\k{a}}}1
+{Ą}{{\k{A}}}1
+{ć}{{\'c}}1
+{Ć}{{\'{C}}}1
+{ę}{{\k{e}}}1
+{Ę}{{\k{E}}}1
+{ł}{{\l{}}}1
+{Ł}{{\L{}}}1
+{ń}{{\'n}}1
+{Ń}{{\'N}}1
+{ó}{{\'o}}1
+{Ó}{{\'O}}1
+{ś}{{\'s}}1
+{Ś}{{\'S}}1
+{ż}{{\.z}}1
+{Ż}{{\.Z}}1
+{ź}{{\'z}}1
+{Ź}{{\'Z}}1
+}
+\usepackage[utf8]{inputenc}
+%nagłówek i stopka:
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Kompresja Danych - Dźwięk.}
+\cfoot{\thepage \ z \pageref{LastPage}}
+
+%nagłówek na stronie tytułowej -> musi być specjalny, żeby przesłonić :)
+\fancypagestyle{firstPageStyle}{
+\fancyhf{}
+\cfoot{\thepage \ z \pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.5pt} % Line at the footer visible
+}
+
+\title{Projekt realizowany w ramach przedmiotu Metody Eksploracji Danych, Temat: Analiza Zbioru Danych Aplikacji Z Google Play Store Wraz Ze Stworzeniem Modelu Regresji Oceny i Ceny.}
+\author{Marharyta Kruk, Bartosz Puszkarski}
+\date{Grudzień 2019}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstPageStyle}
+\newpage
+\tableofcontents
+
+\newpage
+\section{Link do zbioru danych}
+\href{https://www.kaggle.com/lava18/google-play-store-apps?fbclid=IwAR2PyzHNAo0x_v-nGmEWigN9ieh4juCYgEIsH7zt7evD9MtlRz6MXVcUjiQ}{Link do Kaggle'a}
+
+\end{document}
+
